@@ -5,5 +5,11 @@
   "outputDirectory": "dist",
   "env": {
     "NODE_ENV": "production"
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/pages/:page.html",
+      "destination": "/pages/:page.html"
+    }
+  ]
 }
