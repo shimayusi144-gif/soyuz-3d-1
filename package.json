@@ -1,0 +1,22 @@
+{
+  "name": "soyuz-3d",
+  "version": "1.0.0",
+  "description": "3D Printing and Reverse Engineering Company Website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "3d-printing",
+    "3d-modeling",
+    "reverse-engineering"
+  ],
+  "author": "Soyuz 3D",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "terser": "^5.31.0"
+  }
+}
