@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FDM 3D-печать от Союз 3D. Работаем с PLA, ABS, PETG, Nylon и другими материалами. Прототипирование и серийное производство в Перми.">
+    <meta property="og:title" content="3D Печать - FDM Технология - Союз 3D">
+    <meta property="og:description" content="Высокоточная FDM 3D-печать от прототипов до серийного производства. Широкий выбор материалов.">
+    <meta property="og:type" content="website">
     <title>3D Печать - FDM Технология - Союз 3D</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
@@ -10,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">СОЮЗ 3D</div>
+            <a href="../index.html" class="logo">СОЮЗ 3D</a>
             <ul class="nav-links">
                 <li><a href="../index.html#home">Главная</a></li>
                 <li><a href="../index.html#services">Услуги</a></li>
@@ -18,157 +22,167 @@
                 <li><a href="../index.html#why">Преимущества</a></li>
                 <li><a href="../index.html#contact">Контакты</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Открыть меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
-    <div class="divider"></div>
+    <main>
+        <div class="divider"></div>
 
-    <section style="padding: 5rem 5%; max-width: 1400px; margin: 0 auto;">
-        <div class="section-header">
-            <div class="section-number">01 — Технология</div>
-            <h2 class="section-title">Что такое FDM печать?</h2>
-        </div>
-
-        <div style="max-width: 900px;">
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
-                FDM (Fused Deposition Modeling) — это технология 3D-печати, которая создает объекты путем послойного наплавления расплавленного пластика. Материал выдавливается через нагреваемое сопло и наносится слой за слоем, создавая точные трехмерные изделия из различных полимерных материалов.
-            </p>
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
-                Эта технология позволяет быстро преобразовать цифровые модели в физические объекты, идеально подходя для прототипирования, создания функциональных деталей и серийного производства.
-            </p>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section style="padding: 5rem 5%; max-width: 1400px; margin: 0 auto;">
-        <div class="section-header">
-            <div class="section-number">02 — Материалы</div>
-            <h2 class="section-title">Материалы для FDM печати</h2>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem;">
-            <div style="border: 1px solid var(--black); padding: 2rem;">
-                <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">PLA</h3>
-                <p style="color: var(--gray); line-height: 1.7;">Биоразлагаемый пластик на основе кукурузного крахмала. Легче всего печатать, идеален для прототипов и визуализации. Хорошая детализация и минимальная усадка.</p>
+        <section>
+            <div class="section-header">
+                <div class="section-number">01 — Технология</div>
+                <h2 class="section-title">Что такое FDM печать?</h2>
             </div>
 
-            <div style="border: 1px solid var(--black); padding: 2rem;">
-                <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">ABS</h3>
-                <p style="color: var(--gray); line-height: 1.7;">Прочный и выносливый материал с хорошей ударопрочностью. Применяется для функциональных деталей, которые требуют прочности и устойчивости к высоким температурам.</p>
+            <div style="max-width: 900px;">
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
+                    FDM (Fused Deposition Modeling) — это технология 3D-печати, которая создает объекты путем послойного наплавления расплавленного пластика. Материал выдавливается через нагреваемое сопло и наносится слой за слоем, создавая точные трехмерные изделия из различных полимерных материалов.
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
+                    Эта технология позволяет быстро преобразовать цифровые модели в физические объекты, идеально подходя для прототипирования, создания функциональных деталей и серийного производства.
+                </p>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section>
+            <div class="section-header">
+                <div class="section-number">02 — Материалы</div>
+                <h2 class="section-title">Материалы для FDM печати</h2>
             </div>
 
-            <div style="border: 1px solid var(--black); padding: 2rem;">
-                <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">PETG</h3>
-                <p style="color: var(--gray); line-height: 1.7;">Комбинация прочности ABS и простоты печати PLA. Химически стойкий, водостойкий, хороший выбор для функциональных деталей и утилитарных изделий.</p>
-            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem;">
+                <div style="border: 1px solid var(--black); padding: 2rem;">
+                    <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">PLA</h3>
+                    <p style="color: var(--gray); line-height: 1.7;">Биоразлагаемый пластик на основе кукурузного крахмала. Легче всего печатать, идеален для прототипов и визуализации. Хорошая детализация и минимальная усадка.</p>
+                </div>
 
-            <div style="border: 1px solid var(--black); padding: 2rem;">
-                <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">Nylon (PA)</h3>
-                <p style="color: var(--gray); line-height: 1.7;">Высокопрочный и гибкий материал. Идеален для механических деталей, петель и шарниров. Отличная износостойкость и долговечность.</p>
-            </div>
+                <div style="border: 1px solid var(--black); padding: 2rem;">
+                    <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">ABS</h3>
+                    <p style="color: var(--gray); line-height: 1.7;">Прочный и выносливый материал с хорошей ударопрочностью. Применяется для функциональных деталей, которые требуют прочности и устойчивости к высоким температурам.</p>
+                </div>
 
-            <div style="border: 1px solid var(--black); padding: 2rem;">
-                <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">TPU / Гибкие пластики</h3>
-                <p style="color: var(--gray); line-height: 1.7;">Эластичные материалы для создания гибких и мягких деталей. Применяются для изделий с амортизацией и гибкостью.</p>
-            </div>
+                <div style="border: 1px solid var(--black); padding: 2rem;">
+                    <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">PETG</h3>
+                    <p style="color: var(--gray); line-height: 1.7;">Комбинация прочности ABS и простоты печати PLA. Химически стойкий, водостойкий, хороший выбор для функциональных деталей и утилитарных изделий.</p>
+                </div>
 
-            <div style="border: 1px solid var(--black); padding: 2rem;">
-                <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">Композитные материалы</h3>
-                <p style="color: var(--gray); line-height: 1.7;">PLA с углеродным волокном, стекловолокном и другими добавками. Обеспечивают повышенную прочность и жесткость при меньшем весе.</p>
-            </div>
-        </div>
-    </section>
+                <div style="border: 1px solid var(--black); padding: 2rem;">
+                    <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">Nylon (PA)</h3>
+                    <p style="color: var(--gray); line-height: 1.7;">Высокопрочный и гибкий материал. Идеален для механических деталей, петель и шарниров. Отличная износостойкость и долговечность.</p>
+                </div>
 
-    <div class="divider"></div>
+                <div style="border: 1px solid var(--black); padding: 2rem;">
+                    <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">TPU / Гибкие пластики</h3>
+                    <p style="color: var(--gray); line-height: 1.7;">Эластичные материалы для создания гибких и мягких деталей. Применяются для изделий с амортизацией и гибкостью.</p>
+                </div>
 
-    <section style="padding: 5rem 5%; max-width: 1400px; margin: 0 auto;">
-        <div class="section-header">
-            <div class="section-number">03 — Оборудование</div>
-            <h2 class="section-title">Современное оборудование для печати</h2>
-        </div>
-
-        <div style="max-width: 900px;">
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
-                FDM принтеры различаются по скорости, точности, размеру строительной платформы и поддерживаемым материалам. Выбор правильного оборудования критически важен для качества и эффективности производства. Важными характеристиками являются разрешение печати, скорость работы, надежность и возможность работать с различными типами пластиков.
-            </p>
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
-                Мы используем принтеры от Bambu Lab, которые обеспечивают стабильную работу и высокое качество печати. Это позволяет нам надежно выполнять заказы различной сложности, от простых прототипов до функциональных деталей, требующих высокой точности и прочности.
-            </p>
-            <p style="font-size: 1.05rem; line-height: 1.9; color: var(--gray);">
-                Наше оборудование позволяет работать с широким спектром материалов и обеспечивает быстрое выполнение заказов. Это особенно важно для клиентов, которым нужны быстрые прототипы или срочная поставка деталей без ущерба качеству.
-            </p>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section style="padding: 5rem 5%; max-width: 1400px; margin: 0 auto;">
-        <div class="section-header">
-            <div class="section-number">04 — Наш подход</div>
-            <h2 class="section-title">Как мы работаем с FDM печатью</h2>
-        </div>
-
-        <div class="why-list" style="width: 100%; display: flex; flex-direction: column;">
-            <div class="why-item">
-                <div class="why-index">01</div>
-                <div class="why-content">
-                    <h3>Выбор оптимального материала</h3>
-                    <p>Для каждого проекта мы анализируем требования и выбираем наиболее подходящий материал. Это может быть прочный ABS для функциональных деталей или простой PLA для прототипов и визуализации.</p>
+                <div style="border: 1px solid var(--black); padding: 2rem;">
+                    <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">Композитные материалы</h3>
+                    <p style="color: var(--gray); line-height: 1.7;">PLA с углеродным волокном, стекловолокном и другими добавками. Обеспечивают повышенную прочность и жесткость при меньшем весе.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="why-item">
-                <div class="why-index">02</div>
-                <div class="why-content">
-                    <h3>Настройка параметров печати</h3>
-                    <p>Мы внимательно настраиваем параметры для каждого материала и геометрии изделия. Это обеспечивает высокое качество и точность при минимальном количестве ошибок и необходимости постобработки.</p>
-                </div>
+        <div class="divider"></div>
+
+        <section>
+            <div class="section-header">
+                <div class="section-number">03 — Оборудование</div>
+                <h2 class="section-title">Современное оборудование для печати</h2>
             </div>
 
-            <div class="why-item">
-                <div class="why-index">03</div>
-                <div class="why-content">
-                    <h3>Контроль качества</h3>
-                    <p>Каждое изделие проверяется на соответствие требованиям. Мы следим за качеством печати и при необходимости проводим постобработку — шлифовку, окрашивание или сборку.</p>
-                </div>
+            <div style="max-width: 900px;">
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
+                    FDM принтеры различаются по скорости, точности, размеру строительной платформы и поддерживаемым материалам. Выбор правильного оборудования критически важен для качества и эффективности производства. Важными характеристиками являются разрешение печати, скорость работы, надежность и возможность работать с различными типами пластиков.
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
+                    Мы используем принтеры от Bambu Lab, которые обеспечивают стабильную работу и высокое качество печати. Это позволяет нам надежно выполнять заказы различной сложности, от простых прототипов до функциональных деталей, требующих высокой точности и прочности.
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.9; color: var(--gray);">
+                    Наше оборудование позволяет работать с широким спектром материалов и обеспечивает быстрое выполнение заказов. Это особенно важно для клиентов, которым нужны быстрые прототипы или срочная поставка деталей без ущерба качеству.
+                </p>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section>
+            <div class="section-header">
+                <div class="section-number">04 — Наш подход</div>
+                <h2 class="section-title">Как мы работаем с FDM печатью</h2>
             </div>
 
-            <div class="why-item">
-                <div class="why-index">04</div>
-                <div class="why-content">
-                    <h3>Оптимизация для производства</h3>
-                    <p>Мы помогаем клиентам оптимизировать модели для FDM печати — расчёт толщины стенок, добавление поддержек, правильную ориентацию при печати для максимальной точности и прочности.</p>
+            <div class="why-list">
+                <div class="why-item">
+                    <div class="why-index">01</div>
+                    <div class="why-content">
+                        <h3>Выбор оптимального материала</h3>
+                        <p>Для каждого проекта мы анализируем требования и выбираем наиболее подходящий материал. Это может быть прочный ABS для функциональных деталей или простой PLA для прототипов и визуализации.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">02</div>
+                    <div class="why-content">
+                        <h3>Настройка параметров печати</h3>
+                        <p>Мы внимательно настраиваем параметры для каждого материала и геометрии изделия. Это обеспечивает высокое качество и точность при минимальном количестве ошибок и необходимости постобработки.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">03</div>
+                    <div class="why-content">
+                        <h3>Контроль качества</h3>
+                        <p>Каждое изделие проверяется на соответствие требованиям. Мы следим за качеством печати и при необходимости проводим постобработку — шлифовку, окрашивание или сборку.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">04</div>
+                    <div class="why-content">
+                        <h3>Оптимизация для производства</h3>
+                        <p>Мы помогаем клиентам оптимизировать модели для FDM печати — расчёт толщины стенок, добавление поддержек, правильную ориентацию при печати для максимальной точности и прочности.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">05</div>
+                    <div class="why-content">
+                        <h3>Быстрые сроки</h3>
+                        <p>Благодаря современному оборудованию и опыту нашей команды, мы можем выполнить заказы быстро. Идеально для проектов, которые требуют быстрого прототипирования или срочной поставки деталей.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="why-item">
-                <div class="why-index">05</div>
-                <div class="why-content">
-                    <h3>Быстрые сроки</h3>
-                    <p>Благодаря современному оборудованию и опыту нашей команды, мы можем выполнить заказы быстро. Идеально для проектов, которые требуют быстрого прототипирования или срочной поставки деталей.</p>
-                </div>
+        <div class="contact-wrapper">
+            <div class="section-header">
+                <h2 class="section-title">Начните свой проект с нами</h2>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.1rem; color: var(--white); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Используя передовые технологии FDM, мы готовы воплотить ваши идеи в жизнь с высочайшей точностью и скоростью.
+                </p>
+                <a href="../index.html#contact" class="cta-link">Связаться с нами</a>
             </div>
         </div>
-    </section>
-
-    <div class="contact-wrapper">
-        <div class="section-header">
-            <h2 class="section-title">Начните свой проект с нами</h2>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem;">
-            <p style="font-size: 1.1rem; color: var(--white); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Используя передовые технологии FDM, мы готовы воплотить ваши идеи в жизнь с высочайшей точностью и скоростью.
-            </p>
-            <a href="../index.html#contact" class="cta-link">Связаться с нами</a>
-        </div>
-    </div>
+    </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-column">
-                <h4>Телефон</h4>
+                <h4>Email</h4>
+                <p class="footer-email"><a href="mailto:info@soyuz3d.com">info@soyuz3d.com</a></p>
+                
+                <h4 style="margin-top: 2rem;">Телефон</h4>
                 <p class="footer-phone"><a href="tel:+79958615169">+7 (995) 861-51-69</a></p>
                 
                 <h4 style="margin-top: 2rem;">Офис</h4>
@@ -176,7 +190,6 @@
                 
                 <h4 style="margin-top: 2rem;">Мессенджеры</h4>
                 <div class="footer-messengers">
-                    <a href="#" class="messenger-link">Telegram-канал</a>
                     <a href="https://vk.com/soyuz3d" target="_blank" rel="noopener noreferrer" class="messenger-link">VK-группа</a>
                 </div>
             </div>
@@ -196,46 +209,35 @@
                 <ul class="footer-links">
                     <li><a href="3d-printing.html">3D Печать</a></li>
                     <li><a href="reverse-engineering.html">Реверс-Инжиниринг</a></li>
-                    <li><a href="3d-modeling.html">3D Моделирование</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h4>Документы</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Карточка компании</a></li>
-                    <li><a href="#">Политика конфиденциальности</a></li>
-                    <li><a href="#">Согласие на обработку</a></li>
-                    <li><a href="cookie-policy.html">Политика cookie</a></li>
                 </ul>
             </div>
 
             <div class="footer-bottom">
-                <p>© 2026 Союз 3D. Все права защищены.</p>
+                <p>&copy; 2026 Союз 3D. Все права защищены.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../assets/js/cookie-handler.js"></script>
     <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    e.preventDefault();
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinksEl = document.querySelector('.nav-links');
 
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
+        if (hamburger && navLinksEl) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinksEl.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
             });
-        });
+
+            navLinksEl.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinksEl.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
 
         // Header background on scroll
         window.addEventListener('scroll', () => {

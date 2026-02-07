@@ -12,7 +12,6 @@ export default defineConfig({
         main: 'index.html',
         '3d-modeling': 'pages/3d-modeling.html',
         '3d-printing': 'pages/3d-printing.html',
-        'cookie-policy': 'pages/cookie-policy.html',
         'reverse-engineering': 'pages/reverse-engineering.html'
       },
       output: {

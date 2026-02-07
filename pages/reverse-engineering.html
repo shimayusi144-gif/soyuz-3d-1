@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Реверс-инжиниринг и 3D-сканирование объектов от Союз 3D. Оцифровка деталей, создание 3D-моделей с помощью сканеров RangeVision.">
+    <meta property="og:title" content="Реверс-Инжиниринг - Оцифровка объектов - Союз 3D">
+    <meta property="og:description" content="Профессиональное 3D-сканирование и реверс-инжиниринг. Создаём точные цифровые копии физических объектов.">
+    <meta property="og:type" content="website">
     <title>Реверс-Инжиниринг - Оцифровка объектов - Союз 3D</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
@@ -10,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">СОЮЗ 3D</div>
+            <a href="../index.html" class="logo">СОЮЗ 3D</a>
             <ul class="nav-links">
                 <li><a href="../index.html#home">Главная</a></li>
                 <li><a href="../index.html#services">Услуги</a></li>
@@ -18,191 +22,201 @@
                 <li><a href="../index.html#why">Преимущества</a></li>
                 <li><a href="../index.html#contact">Контакты</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Открыть меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
-    <div class="divider"></div>
+    <main>
+        <div class="divider"></div>
 
-    <section style="padding: 5rem 5%; max-width: 1400px; margin: 0 auto;">
-        <div class="section-header">
-            <div class="section-number">01 — Что такое реверс-инжиниринг</div>
-            <h2 class="section-title">Понимание реверс-инжиниринга</h2>
-        </div>
-
-        <div style="max-width: 900px;">
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
-                Реверс-инжиниринг — это процесс изучения существующего физического объекта с целью понимания его конструкции, размеров и характеристик. Эта технология позволяет создать точную цифровую копию или 3D-модель реального предмета, не имея исходных технических документов или чертежей.
-            </p>
-            <p style="font-size: 1.05rem; line-height: 1.9; color: var(--gray);">
-                Процесс включает сканирование физического объекта с помощью специального оборудования, обработку полученных данных и создание цифровой 3D-модели. Это особенно полезно для воспроизведения снятых с производства запчастей, восстановления утерянной документации или анализа конструкций конкурентов.
-            </p>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section style="padding: 5rem 5%; max-width: 1400px; margin: 0 auto;">
-        <div class="section-header">
-            <div class="section-number">02 — Стадии реверс-инжиниринга</div>
-            <h2 class="section-title">Как мы работаем с оцифровкой</h2>
-        </div>
-
-        <div class="why-list" style="width: 100%; display: flex; flex-direction: column;">
-            <div class="why-item">
-                <div class="why-index">01</div>
-                <div class="why-content">
-                    <h3>Подготовка и сканирование объекта</h3>
-                    <p>Первый этап — это тщательная подготовка физического объекта. Объект очищается, удаляются загрязнения. Затем выполняется 3D-сканирование с высокой точностью, часто требующее сканирования с разных углов для получения полной геометрии.</p>
-                </div>
+        <section>
+            <div class="section-header">
+                <div class="section-number">01 — Что такое реверс-инжиниринг</div>
+                <h2 class="section-title">Понимание реверс-инжиниринга</h2>
             </div>
 
-            <div class="why-item">
-                <div class="why-index">02</div>
-                <div class="why-content">
-                    <h3>Обработка облака точек</h3>
-                    <p>После сканирования мы получаем облако точек — набор координат всех поверхностей объекта. Это облако обрабатывается специальным программным обеспечением: удаляются шумы, объединяются множественные сканы, создаётся единая геометрия высокого качества.</p>
-                </div>
+            <div style="max-width: 900px;">
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
+                    Реверс-инжиниринг — это процесс изучения существующего физического объекта с целью понимания его конструкции, размеров и характеристик. Эта технология позволяет создать точную цифровую копию или 3D-модель реального предмета, не имея исходных технических документов или чертежей.
+                </p>
+                <p style="font-size: 1.05rem; line-height: 1.9; color: var(--gray);">
+                    Процесс включает сканирование физического объекта с помощью специального оборудования, обработку полученных данных и создание цифровой 3D-модели. Это особенно полезно для воспроизведения снятых с производства запчастей, восстановления утерянной документации или анализа конструкций конкурентов.
+                </p>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section>
+            <div class="section-header">
+                <div class="section-number">02 — Стадии реверс-инжиниринга</div>
+                <h2 class="section-title">Как мы работаем с оцифровкой</h2>
             </div>
 
-            <div class="why-item">
-                <div class="why-index">03</div>
-                <div class="why-content">
-                    <h3>Создание полигональной модели</h3>
-                    <p>Облако точек преобразуется в полигональную сетку (mesh), которая представляет поверхность объекта. Эта сетка оптимизируется для снижения количества полигонов без потери детализации, что облегчает работу с моделью.</p>
+            <div class="why-list">
+                <div class="why-item">
+                    <div class="why-index">01</div>
+                    <div class="why-content">
+                        <h3>Подготовка и сканирование объекта</h3>
+                        <p>Первый этап — это тщательная подготовка физического объекта. Объект очищается, удаляются загрязнения. Затем выполняется 3D-сканирование с высокой точностью, часто требующее сканирования с разных углов для получения полной геометрии.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">02</div>
+                    <div class="why-content">
+                        <h3>Обработка облака точек</h3>
+                        <p>После сканирования мы получаем облако точек — набор координат всех поверхностей объекта. Это облако обрабатывается специальным программным обеспечением: удаляются шумы, объединяются множественные сканы, создаётся единая геометрия высокого качества.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">03</div>
+                    <div class="why-content">
+                        <h3>Создание полигональной модели</h3>
+                        <p>Облако точек преобразуется в полигональную сетку (mesh), которая представляет поверхность объекта. Эта сетка оптимизируется для снижения количества полигонов без потери детализации, что облегчает работу с моделью.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">04</div>
+                    <div class="why-content">
+                        <h3>Обработка и реконструкция геометрии</h3>
+                        <p>На этом этапе модель обрабатывается для удаления артефактов сканирования, сглаживания поверхностей и детализации сложных геометрических форм. Для производственных деталей мы выполняем реконструкцию — перестройку геометрии на основе облака точек с целью получения более точных данных для производства. Это обеспечивает геометрическую точность, необходимую для повторного производства или модификации.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">05</div>
+                    <div class="why-content">
+                        <h3>Экспорт и подготовка к производству</h3>
+                        <p>Готовая модель экспортируется в необходимые форматы (STL, STEP, OBJ и другие) для использования в 3D-печати, дальнейшем проектировании или производстве. Модель может быть адаптирована под конкретные требования клиента.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="why-item">
-                <div class="why-index">04</div>
-                <div class="why-content">
-                    <h3>Обработка и реконструкция геометрии</h3>
-                    <p>На этом этапе модель обрабатывается для удаления артефактов сканирования, сглаживания поверхностей и детализации сложных геометрических форм. Для производственных деталей мы выполняем реконструкцию — перестройку геометрии на основе облака точек с целью получения более точных данных для производства. Это обеспечивает геометрическую точность, необходимую для повторного производства или модификации.</p>
-                </div>
+        <div class="divider"></div>
+
+        <section>
+            <div class="section-header">
+                <div class="section-number">03 — Оборудование для сканирования</div>
+                <h2 class="section-title">RangeVision: Профессиональное сканирование</h2>
             </div>
 
-            <div class="why-item">
-                <div class="why-index">05</div>
-                <div class="why-content">
-                    <h3>Экспорт и подготовка к производству</h3>
-                    <p>Готовая модель экспортируется в необходимые форматы (STL, STEP, OBJ и другие) для использования в 3D-печати, дальнейшем проектировании или производстве. Модель может быть адаптирована под конкретные требования клиента.</p>
+            <div style="max-width: 900px;">
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
+                    Мы используем сканеры от RangeVision — ведущего российского производителя систем 3D-сканирования. Эти сканеры обеспечивают высокую точность и широкий спектр возможностей для оцифровки объектов различного размера и сложности.
+                </p>
+
+                <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.3rem; margin-bottom: 1.5rem;">Что мы сканируем</h3>
+                
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
+                    <strong>Промышленные детали и компоненты</strong> — машиностроительные изделия, литые и обработанные детали, которые необходимо воспроизвести или задокументировать.
+                </p>
+
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
+                    <strong>Архитектурные объекты</strong> — фасады зданий, интерьеры помещений, скульптуры и памятники, требующие точной 3D-документации.
+                </p>
+
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
+                    <strong>Изделия потребительского спроса</strong> — корпусы электроники, корпусная мебель, косметические изделия и прочие товары для анализа конструкции и модификации дизайна.
+                </p>
+
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
+                    <strong>Запчасти и аналоги</strong> — редкие или снятые с производства детали, которые необходимо восстановить и воспроизвести в производстве.
+                </p>
+
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
+                    <strong>Исторические и культурные объекты</strong> — артефакты, музейные экспонаты, предметы искусства, нуждающиеся в цифровой консервации.
+                </p>
+
+                <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
+                    <strong>Биометрические модели</strong> — моделирование сложных органических форм для медицинских, спортивных и других специализированных приложений.
+                </p>
+
+                <p style="font-size: 1.05rem; line-height: 1.9; color: var(--gray);">
+                    Сканеры RangeVision позволяют нам работать с объектами размером от нескольких сантиметров до нескольких метров с высокой точностью. Мы обрабатываем данные сканирования на профессиональном уровне, гарантируя точность и готовность модели к производству или дальнейшему проектированию.
+                </p>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section>
+            <div class="section-header">
+                <div class="section-number">04 — Наш подход</div>
+                <h2 class="section-title">Качество в каждом проекте</h2>
+            </div>
+
+            <div class="why-list">
+                <div class="why-item">
+                    <div class="why-index">01</div>
+                    <div class="why-content">
+                        <h3>Полная оцифровка</h3>
+                        <p>Мы создаём полную и точную цифровую копию вашего объекта, захватывая все детали, размеры и особенности конструкции. Ничего не упускается при сканировании и обработке.</p>
+                    </div>
                 </div>
+
+                <div class="why-item">
+                    <div class="why-index">02</div>
+                    <div class="why-content">
+                        <h3>Высокая точность</h3>
+                        <p>Используя профессиональное оборудование RangeVision, мы обеспечиваем точность сканирования в пределах микронов. Это гарантирует, что воспроизведённые детали будут идеальны по геометрии.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">03</div>
+                    <div class="why-content">
+                        <h3>Быстрая обработка</h3>
+                        <p>Современные инструменты позволяют нам быстро обработать облако точек и создать готовую 3D-модель. Время обработки зависит от сложности объекта, но мы стремимся к оптимальным срокам.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">04</div>
+                    <div class="why-content">
+                        <h3>Готовность к производству</h3>
+                        <p>Наши модели готовы не только для визуализации, но и для прямого использования в производстве, 3D-печати или дальнейшем проектировании. Форматы экспорта подбираются под ваши нужды.</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-index">05</div>
+                    <div class="why-content">
+                        <h3>Консультирование и адаптация</h3>
+                        <p>Мы помогаем вам с анализом полученной модели, её модификацией для конкретных задач, а также консультируем по возможностям использования в ваших проектах.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-wrapper">
+            <div class="section-header">
+                <h2 class="section-title">Начните со сканирования</h2>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.1rem; color: var(--white); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Если вам нужна точная 3D-модель вашего объекта, мы готовы помочь с профессиональным сканированием и обработкой.
+                </p>
+                <a href="../index.html#contact" class="cta-link">Связаться с нами</a>
             </div>
         </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section style="padding: 5rem 5%; max-width: 1400px; margin: 0 auto;">
-        <div class="section-header">
-            <div class="section-number">03 — Оборудование для сканирования</div>
-            <h2 class="section-title">RangeVision: Профессиональное сканирование</h2>
-        </div>
-
-        <div style="max-width: 900px;">
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
-                Мы используем сканеры от RangeVision — ведущего российского производителя систем 3D-сканирования. Эти сканеры обеспечивают высокую точность и широкий спектр возможностей для оцифровки объектов различного размера и сложности.
-            </p>
-
-            <h3 style="font-family: 'DM Serif Display', serif; font-size: 1.3rem; margin-bottom: 1.5rem;">Что мы сканируем</h3>
-            
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
-                <strong>Промышленные детали и компоненты</strong> — машиностроительные изделия, литые и обработанные детали, которые необходимо воспроизвести или задокументировать.
-            </p>
-
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
-                <strong>Архитектурные объекты</strong> — фасады зданий, интерьеры помещений, скульптуры и памятники, требующие точной 3D-документации.
-            </p>
-
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
-                <strong>Изделия потребительского спроса</strong> — корпусы электроники, корпусная мебель, косметические изделия и прочие товары для анализа конструкции и модификации дизайна.
-            </p>
-
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
-                <strong>Запчасти и аналоги</strong> — редкие или снятые с производства детали, которые необходимо восстановить и воспроизвести в производстве.
-            </p>
-
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 1rem; color: var(--gray);">
-                <strong>Исторические и культурные объекты</strong> — артефакты, музейные экспонаты, предметы искусства, нуждающиеся в цифровой консервации.
-            </p>
-
-            <p style="font-size: 1.05rem; line-height: 1.9; margin-bottom: 2rem; color: var(--gray);">
-                <strong>Биометрические модели</strong> — моделирование сложных органических форм для медицинских, спортивных и других специализированных приложений.
-            </p>
-
-            <p style="font-size: 1.05rem; line-height: 1.9; color: var(--gray);">
-                Сканеры RangeVision позволяют нам работать с объектами размером от нескольких сантиметров до нескольких метров с высокой точностью. Мы обрабатываем данные сканирования на профессиональном уровне, гарантируя точность и готовность модели к производству или дальнейшему проектированию.
-            </p>
-        </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section style="padding: 5rem 5%; max-width: 1400px; margin: 0 auto;">
-        <div class="section-header">
-            <div class="section-number">04 — Наш подход</div>
-            <h2 class="section-title">Качество в каждом проекте</h2>
-        </div>
-
-        <div class="why-list" style="width: 100%; display: flex; flex-direction: column;">
-            <div class="why-item">
-                <div class="why-index">01</div>
-                <div class="why-content">
-                    <h3>Полная оцифровка</h3>
-                    <p>Мы создаём полную и точную цифровую копию вашего объекта, захватывая все детали, размеры и особенности конструкции. Ничего не упускается при сканировании и обработке.</p>
-                </div>
-            </div>
-
-            <div class="why-item">
-                <div class="why-index">02</div>
-                <div class="why-content">
-                    <h3>Высокая точность</h3>
-                    <p>Используя профессиональное оборудование RangeVision, мы обеспечиваем точность сканирования в пределах микронов. Это гарантирует, что воспроизведённые детали будут идеальны по геометрии.</p>
-                </div>
-            </div>
-
-            <div class="why-item">
-                <div class="why-index">03</div>
-                <div class="why-content">
-                    <h3>Быстрая обработка</h3>
-                    <p>Современные инструменты позволяют нам быстро обработать облако точек и создать готовую 3D-модель. Время обработки зависит от сложности объекта, но мы стремимся к оптимальным срокам.</p>
-                </div>
-            </div>
-
-            <div class="why-item">
-                <div class="why-index">04</div>
-                <div class="why-content">
-                    <h3>Готовность к производству</h3>
-                    <p>Наши модели готовы не только для визуализации, но и для прямого использования в производстве, 3D-печати или дальнейшем проектировании. Форматы экспорта подбираются под ваши нужды.</p>
-                </div>
-            </div>
-
-            <div class="why-item">
-                <div class="why-index">05</div>
-                <div class="why-content">
-                    <h3>Консультирование и адаптация</h3>
-                    <p>Мы помогаем вам с анализом полученной модели, её модификацией для конкретных задач, а также консультируем по возможностям использования в ваших проектах.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="contact-wrapper">
-        <div class="section-header">
-            <h2 class="section-title">Начните со сканирования</h2>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem;">
-            <p style="font-size: 1.1rem; color: var(--white); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Если вам нужна точная 3D-модель вашего объекта, мы готовы помочь с профессиональным сканированием и обработкой.
-            </p>
-            <a href="../index.html#contact" class="cta-link">Связаться с нами</a>
-        </div>
-    </div>
+    </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-column">
-                <h4>Телефон</h4>
+                <h4>Email</h4>
+                <p class="footer-email"><a href="mailto:info@soyuz3d.com">info@soyuz3d.com</a></p>
+                
+                <h4 style="margin-top: 2rem;">Телефон</h4>
                 <p class="footer-phone"><a href="tel:+79958615169">+7 (995) 861-51-69</a></p>
                 
                 <h4 style="margin-top: 2rem;">Офис</h4>
@@ -210,7 +224,6 @@
                 
                 <h4 style="margin-top: 2rem;">Мессенджеры</h4>
                 <div class="footer-messengers">
-                    <a href="#" class="messenger-link">Telegram-канал</a>
                     <a href="https://vk.com/soyuz3d" target="_blank" rel="noopener noreferrer" class="messenger-link">VK-группа</a>
                 </div>
             </div>
@@ -230,46 +243,35 @@
                 <ul class="footer-links">
                     <li><a href="3d-printing.html">3D Печать</a></li>
                     <li><a href="reverse-engineering.html">Реверс-Инжиниринг</a></li>
-                    <li><a href="3d-modeling.html">3D Моделирование</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h4>Документы</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Карточка компании</a></li>
-                    <li><a href="#">Политика конфиденциальности</a></li>
-                    <li><a href="#">Согласие на обработку</a></li>
-                    <li><a href="cookie-policy.html">Политика cookie</a></li>
                 </ul>
             </div>
 
             <div class="footer-bottom">
-                <p>© 2026 Союз 3D. Все права защищены.</p>
+                <p>&copy; 2026 Союз 3D. Все права защищены.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../assets/js/cookie-handler.js"></script>
     <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    e.preventDefault();
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinksEl = document.querySelector('.nav-links');
 
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-                }
+        if (hamburger && navLinksEl) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinksEl.classList.toggle('active');
+                hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
             });
-        });
+
+            navLinksEl.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinksEl.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
 
         // Header background on scroll
         window.addEventListener('scroll', () => {
